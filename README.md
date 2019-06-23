@@ -50,6 +50,7 @@ ROWS 23453 to 24580
 
 cresci-2017 - traditional spambots #4 - another group of automated accounts spamming job offers  
 
+---------------- 
 
 Could be added:  
 Star Wars Bots  
