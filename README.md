@@ -1,12 +1,10 @@
 # Twitter-Bots
 
 ------------------------------------------------  
-BOTS - twitter-bots-uids.csv  
+BOTS 
 ------------------------------------------------  
 
-List of known bots. Aiming to avoid inclusion of any human-operated account (trolls and retweeters) that actually travels.
-
-List contains 24580 rows for 24578 distinct users.
+[List of bots](twitter-bots-uids.csv) - Contains 24,580 rows, 24,578 distinct users.  
 
 ----------------  
 ROWS 1 to 22223  
@@ -68,10 +66,10 @@ J.EcheverriaGuzman@ucl.ac.uk
 
 
 ------------------------------------------------
-TROLLS - twitter-trolls-uids.csv
+TROLLS
 ------------------------------------------------
 
-List of known trolls
+[List of trolls](twitter-trolls-uids.csv) - Contains 454 rows  
 
 ROWS 1 to 454
 
