@@ -4,7 +4,7 @@
 BOTS 
 ------------------------------------------------  
 
-[List of bots](twitter-bots-uids.csv) - Contains 24,580 rows, 24,578 distinct users.  
+[List of bots](twitter-bots-uids.csv) - Contains 24,580 rows with 24,578 distinct users.  
 
 ----------------  
 ROWS 1 to 22223  
