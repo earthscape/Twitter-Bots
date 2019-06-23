@@ -1,25 +1,12 @@
-# Twitter-Bots-Trolls-Retweeters
+# Twitter-Bots
 
 ------------------------------------------------  
 BOTS - twitter-bots-uids.csv  
 ------------------------------------------------  
 
-List of known bots for mobility research.  
-Seeks to omit any human-operated account (trolls and retweeters) that actually travels.
+List of known bots. Aiming to avoid inclusion of any human-operated account (trolls and retweeters) that actually travels.
 
-24580, 24578 distinct
-
-SELECT count(*) total, (SELECT count(*) FROM (SELECT DISTINCT twitter_uid FROM twitter_bots_uids)x) AS distinctTotal FROM twitter_bots_uids;
-
-SELECT all_33day.* FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
-
-In 16 storm impacts, 34 known-bot uids were found, having produced 8,601 geotagged tweets.
-
-Unique bots in storm data - 34
-SELECT DISTINCT all_33day.twitter_uid FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
-
-Unique bots in ph2013_tacloban_33day - none
-SELECT DISTINCT ph2013_tacloban_33day.twitter_uid FROM ph2013_tacloban_33day JOIN twitter_bots_uids ON ph2013_tacloban_33day.twitter_uid = twitter_bots_uids.twitter_uid
+List contains 24580 rows for 24578 distinct users.
 
 ----------------  
 ROWS 1 to 22223  
@@ -72,7 +59,7 @@ https://arxiv.org/pdf/1701.02405.pdf
 
 Bursty Bot  
 https://pdfs.semanticscholar.org/8240/c8f3d532eefe6826f25da0d087c6115e9325.pdf  
-
+Wrote:
 Juan Echeverria  
 Department of Computer Science  
 University College London (UCL), United Kingdom  
@@ -89,35 +76,23 @@ List of known trolls
 ROWS 1 to 454
 
 Russian Troll Source:
-external_user_id_rounding_fixes_from_hpsci_nov17.csv
+https://github.com/fivethirtyeight/russian-troll-tweets
+https://github.com/fivethirtyeight/russian-troll-tweets/files/2278803/external_author_id_rounding_fixes.zip
 
 
 ------------------------------------------------
-RETWEETERS - twitter-retweeters-uids.csv
-------------------------------------------------
 
-These may contain human-operated accounts.  
+SQL for mobility study data:  
 
-ROWS 1 to 991  
+SELECT count(*) total, (SELECT count(*) FROM (SELECT DISTINCT twitter_uid FROM twitter_bots_uids)x) AS distinctTotal FROM twitter_bots_uids;
 
-social spambots #1 - retweeters of an Italian political candidate 2012  
+SELECT all_33day.* FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
 
+In 16 storm impacts, 34 known-bot uids were found, having produced 8,601 geotagged tweets.
 
-cresci-2017.csv/datasets_full.csv/tweets.csv  
+Unique bots in storm data - 34
+SELECT DISTINCT all_33day.twitter_uid FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
 
-Source  
-http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p963.pdf  
-
-Other data not used in our Twitter-Bot list since it could contain human-operated accounts.  
-
-  genuine accounts 			verified accounts that are human-operated 3,474 8,377,522 2011 3.1, 3.2  
-R social spambots #1 		retweeters of an Italian political candidate 991 1,610,176 2012 3.1, 3.2  
-  social spambots #2 		spammers of paid apps for mobile devices 3,457 428,542 2014 3.1, 3.2  
-  social spambots #3 		spammers of products on sale at Amazon.com 464 1,418,626 2011 3.1, 3.2  
-  traditional spambots #1 	training set of spammers used by Yang et al. in [44] 1,000 145,094 2009 3.1  
-  traditional spambots #2 	spammers of scam URLs 100 74,957 2014 3.1  
-B traditional spambots #3 	automated accounts spamming job offers 433 5,794,931 2013 3.2  
-B traditional spambots #4 	another group of automated accounts spamming job offers 1,128 133,311 2009 3.2  
-  fake followers 			simple accounts that inflate the number of followers of another account  
-
+Unique bots in ph2013_tacloban_33day - none
+SELECT DISTINCT ph2013_tacloban_33day.twitter_uid FROM ph2013_tacloban_33day JOIN twitter_bots_uids ON ph2013_tacloban_33day.twitter_uid = twitter_bots_uids.twitter_uid
 
