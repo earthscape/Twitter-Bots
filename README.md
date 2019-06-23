@@ -5,7 +5,21 @@ BOTS - twitter-bots-uids.csv
 ------------------------------------------------  
 
 List of known bots for mobility research.  
-Seeks to omit any human-operated account (trolls and retweeters) that actually travels.  
+Seeks to omit any human-operated account (trolls and retweeters) that actually travels.
+
+24580, 24578 distinct
+
+SELECT count(*) total, (SELECT count(*) FROM (SELECT DISTINCT twitter_uid FROM twitter_bots_uids)x) AS distinctTotal FROM twitter_bots_uids;
+
+SELECT all_33day.* FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
+
+In 16 storm impacts, 34 known-bot uids were found, having produced 8,601 geotagged tweets.
+
+Unique bots in storm data - 34
+SELECT DISTINCT all_33day.twitter_uid FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
+
+Unique bots in ph2013_tacloban_33day - none
+SELECT DISTINCT ph2013_tacloban_33day.twitter_uid FROM ph2013_tacloban_33day JOIN twitter_bots_uids ON ph2013_tacloban_33day.twitter_uid = twitter_bots_uids.twitter_uid
 
 ----------------  
 ROWS 1 to 22223  
