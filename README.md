@@ -92,6 +92,5 @@ In 16 storm impacts, 34 known-bot uids were found, having produced 8,601 geotagg
 Unique bots in storm data - 34
 SELECT DISTINCT all_33day.twitter_uid FROM all_33day JOIN twitter_bots_uids ON all_33day.twitter_uid = twitter_bots_uids.twitter_uid
 
-Unique bots in ph2013_tacloban_33day - none
-SELECT DISTINCT ph2013_tacloban_33day.twitter_uid FROM ph2013_tacloban_33day JOIN twitter_bots_uids ON ph2013_tacloban_33day.twitter_uid = twitter_bots_uids.twitter_uid
+See additional notes.
 
