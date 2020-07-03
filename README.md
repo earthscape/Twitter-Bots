@@ -2,7 +2,9 @@
 
 To do: Please fork and add [Twitter Bots from Plazmaz](https://github.com/Plazmaz/Twitter-Bots-List/blob/master/list.txt).  
 
-[Admin notes: github.com/modelearth/tweetdata](https://github.com/modelearth/tweetdata) - Private  
+Created for project on the [impact of storms on mobility](https://model.earth/storm/impact/)  
+
+Storm mobility project notes: [github.com/modelearth/tweetdata](https://github.com/modelearth/tweetdata) - Private  
 
 ------------------------------------------------  
 BOTS 
