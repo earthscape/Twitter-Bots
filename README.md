@@ -1,6 +1,6 @@
 # Twitter-Bots
 
-To do: please fork and add [Twitter Bots from Plazmaz](https://github.com/Plazmaz/Twitter-Bots-List/blob/master/list.txt)  
+To do: Please fork and add [Twitter Bots from Plazmaz](https://github.com/Plazmaz/Twitter-Bots-List/blob/master/list.txt).  
 
 [Admin notes: github.com/modelearth/tweetdata](https://github.com/modelearth/tweetdata) - Private  
 
